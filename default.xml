@@ -469,4 +469,6 @@
   <project path="frameworks/opt/telephony" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_opt_telephony" remote="github" revision="aosp-5.1.1_r8" />
   <project path="system/core" name="SamsungGalaxyTab2-AOSP/aosp_system_core" remote="github" revision="aosp-5.1.1_r8" />
   <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-5.1.1_r8" />
+  <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-5.1.1_r8" />
+
 </manifest>
