@@ -471,4 +471,12 @@
   <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-5.1.1_r8" />
   <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-5.1.1_r8" />
 
+  <!-- Device and hardware parts -->
+  <project path="device/samsung/omap4-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_omap4-common" remote="github" revision="aosp-5.1.1" />
+  <project path="device/samsung/p3100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3100" remote="github" revision="aosp-5.1.1" />
+  <project path="device/samsung/p3110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3110" remote="github" revision="aosp-5.1.1" />
+  <project path="device/samsung/p5100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5100" remote="github" revision="aosp-5.1.1" />
+  <project path="device/samsung/p5110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5110" remote="github" revision="aosp-5.1.1" />
+
+  <project path="hardware/samsung" name="SamsungGalaxyTab2-AOSP/aosp_hardware_samsung" remote="github" revision="aosp-5.1.1" />
 </manifest>
