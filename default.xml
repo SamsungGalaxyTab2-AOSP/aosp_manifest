@@ -472,6 +472,7 @@
 
   <!-- Device and hardware parts -->
   <project path="device/samsung/omap4-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_omap4-common" remote="github" revision="aosp-5.1.1" />
+  <project path="device/samsung/espresso-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_espresso-common" remote="github" revision="aosp-5.1.1" />
   <project path="device/samsung/p3100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3100" remote="github" revision="aosp-5.1.1" />
   <project path="device/samsung/p3110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3110" remote="github" revision="aosp-5.1.1" />
   <project path="device/samsung/p5100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5100" remote="github" revision="aosp-5.1.1" />
