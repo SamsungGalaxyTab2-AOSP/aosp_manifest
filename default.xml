@@ -436,4 +436,13 @@
   <!-- additions -->
   <project path="aosp_manifest" name="SamsungGalaxyTab2-AOSP/aosp_manifest" remote="github" revision="aosp-6.0" />
 
+  <!-- Non-AOSP Device & Hardware parts -->
+  <project path="device/samsung/espresso-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_espresso-common" remote="github" revision="aosp-6.0" />
+  <project path="device/samsung/p3100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3100" remote="github" revision="aosp-6.0" />
+  <project path="device/samsung/p3110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3110" remote="github" revision="aosp-6.0" />
+  <project path="device/samsung/p5100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5100" remote="github" revision="aosp-6.0" />
+  <project path="device/samsung/p5110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5110" remote="github" revision="aosp-6.0" />
+  <project path="hardware/ti/omap4" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ti_omap4" remote="github" revision="aosp-6.0" />
+  <project path="hardware/samsung" name="SamsungGalaxyTab2-AOSP/aosp_hardware_samsung" remote="github" revision="aosp-6.0" />
+
 </manifest>
