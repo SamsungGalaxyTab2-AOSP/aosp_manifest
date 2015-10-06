@@ -479,4 +479,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
+  <!-- additions -->
+  <project path="aosp_manifest" name="SamsungGalaxyTab2-AOSP/aosp_manifest" remote="github" revision="aosp-6.0" />
+
 </manifest>
