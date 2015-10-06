@@ -435,6 +435,7 @@
   <project path="aosp_manifest" name="SamsungGalaxyTab2-AOSP/aosp_manifest" remote="github" revision="aosp-6.0" />
   <project path="hardware/ril" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ril" remote="github" revision="aosp-6.0.0_r1" />
   <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-6.0.0_r1" />
+  <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-6.0" />
 
   <!-- Non-AOSP Device & Hardware parts -->
   <project path="device/samsung/espresso-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_espresso-common" remote="github" revision="aosp-6.0" />
