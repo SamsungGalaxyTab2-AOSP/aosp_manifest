@@ -348,7 +348,6 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -466,6 +465,7 @@
   <project path="frameworks/base" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_base"  remote="github" revision="aosp-5.1.1_r20" />
   <project path="frameworks/native" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_native" remote="github" revision="aosp-5.1.1_r20" />
   <project path="frameworks/opt/telephony" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_opt_telephony" remote="github" revision="aosp-5.1.1_r20" />
+  <project path="packages/apps/Settings" name="SamsungGalaxyTab2-AOSP/aosp_packages_apps_Settings" remote="github" revision="aosp-5.1.1_r20" />
   <project path="system/core" name="SamsungGalaxyTab2-AOSP/aosp_system_core" remote="github" revision="aosp-5.1.1_r20" />
   <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-5.1.1_r20" />
   <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-5.1.1_r8" />
