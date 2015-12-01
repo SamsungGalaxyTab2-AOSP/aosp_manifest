@@ -471,6 +471,7 @@
   <!-- for NTFS & EXFAT support -->
   <project path="external/e2fsprogs" name="SamsungGalaxyTab2-AOSP/aosp_external_e2fsprogs" remote="github" revision="aosp-5.1.1_r29" />
   <project path="external/exfat" name="SamsungGalaxyTab2-AOSP/aosp_external_exfat" remote="github" revision="aosp-5.1.1" />
+  <project path="external/fuse" name="SamsungGalaxyTab2-AOSP/aosp_external_fuse" remote="github" revision="aosp-5.1.1" />
   <project path="external/ntfs-3g" name="SamsungGalaxyTab2-AOSP/aosp_external_ntfs-3g" remote="github" revision="aosp-5.1.1" />
   <project path="system/vold" name="SamsungGalaxyTab2-AOSP/aosp_system_vold" remote="github" revision="aosp-5.1.1_r29" />
 
