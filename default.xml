@@ -107,7 +107,6 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
@@ -442,7 +441,6 @@
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -469,6 +467,12 @@
   <project path="system/core" name="SamsungGalaxyTab2-AOSP/aosp_system_core" remote="github" revision="aosp-5.1.1_r29" />
   <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-5.1.1_r29" />
   <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-5.1.1_r8" />
+
+  <!-- for NTFS & EXFAT support -->
+  <project path="external/e2fsprogs" name="SamsungGalaxyTab2-AOSP/aosp_external_e2fsprogs" remote="github" revision="aosp-5.1.1_r29" />
+  <project path="external/exfat" name="SamsungGalaxyTab2-AOSP/aosp_external_exfat" remote="github" revision="aosp-5.1.1" />
+  <project path="external/ntfs-3g" name="SamsungGalaxyTab2-AOSP/aosp_external_ntfs-3g" remote="github" revision="aosp-5.1.1" />
+  <project path="system/vold" name="SamsungGalaxyTab2-AOSP/aosp_system_vold" remote="github" revision="aosp-5.1.1_r29" />
 
   <!-- Device and hardware parts -->
   <project path="device/samsung/omap4-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_omap4-common" remote="github" revision="aosp-5.1.1" />
