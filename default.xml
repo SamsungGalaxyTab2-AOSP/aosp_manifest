@@ -7,13 +7,13 @@
   <remote  name="github"
            fetch="git://github.com/" />
 
-  <default revision="refs/tags/android-5.1.1_r30"
+  <default revision="refs/tags/android-5.1.1_r33"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
 
  
-  <project path="build" name="SamsungGalaxyTab2-AOSP/aosp_build" remote="github" revision="aosp-5.1.1_r30" >
+  <project path="build" name="SamsungGalaxyTab2-AOSP/aosp_build" remote="github" revision="aosp-5.1.1_r33" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -458,22 +458,22 @@
 
   <!-- additions -->
   <project path="aosp_manifest" name="SamsungGalaxyTab2-AOSP/aosp_manifest" remote="github" revision="aosp-5.1.1_r8" />
-  <project path="bootable/recovery" name="SamsungGalaxyTab2-AOSP/aosp_recovery" remote="github" revision="aosp-5.1.1_r30" />
-  <project path="frameworks/av" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_av" remote="github" revision="aosp-5.1.1_r30" />
-  <project path="frameworks/base" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_base"  remote="github" revision="aosp-5.1.1_r30" />
-  <project path="frameworks/native" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_native" remote="github" revision="aosp-5.1.1_r30" />
-  <project path="frameworks/opt/telephony" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_opt_telephony" remote="github" revision="aosp-5.1.1_r30" />
-  <project path="packages/apps/Settings" name="SamsungGalaxyTab2-AOSP/aosp_packages_apps_Settings" remote="github" revision="aosp-5.1.1_r30" />
-  <project path="system/core" name="SamsungGalaxyTab2-AOSP/aosp_system_core" remote="github" revision="aosp-5.1.1_r30" />
-  <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-5.1.1_r30" />
+  <project path="bootable/recovery" name="SamsungGalaxyTab2-AOSP/aosp_recovery" remote="github" revision="aosp-5.1.1_r33" />
+  <project path="frameworks/av" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_av" remote="github" revision="aosp-5.1.1_r33" />
+  <project path="frameworks/base" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_base"  remote="github" revision="aosp-5.1.1_r33" />
+  <project path="frameworks/native" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_native" remote="github" revision="aosp-5.1.1_r33" />
+  <project path="frameworks/opt/telephony" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_opt_telephony" remote="github" revision="aosp-5.1.1_r33" />
+  <project path="packages/apps/Settings" name="SamsungGalaxyTab2-AOSP/aosp_packages_apps_Settings" remote="github" revision="aosp-5.1.1_r33" />
+  <project path="system/core" name="SamsungGalaxyTab2-AOSP/aosp_system_core" remote="github" revision="aosp-5.1.1_r33" />
+  <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-5.1.1_r33" />
   <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-5.1.1_r8" />
 
   <!-- for NTFS & EXFAT support -->
-  <project path="external/e2fsprogs" name="SamsungGalaxyTab2-AOSP/aosp_external_e2fsprogs" remote="github" revision="aosp-5.1.1_r30" />
+  <project path="external/e2fsprogs" name="SamsungGalaxyTab2-AOSP/aosp_external_e2fsprogs" remote="github" revision="aosp-5.1.1_r33" />
   <project path="external/exfat" name="SamsungGalaxyTab2-AOSP/aosp_external_exfat" remote="github" revision="aosp-5.1.1" />
   <project path="external/fuse" name="SamsungGalaxyTab2-AOSP/aosp_external_fuse" remote="github" revision="aosp-5.1.1" />
   <project path="external/ntfs-3g" name="SamsungGalaxyTab2-AOSP/aosp_external_ntfs-3g" remote="github" revision="aosp-5.1.1" />
-  <project path="system/vold" name="SamsungGalaxyTab2-AOSP/aosp_system_vold" remote="github" revision="aosp-5.1.1_r30" />
+  <project path="system/vold" name="SamsungGalaxyTab2-AOSP/aosp_system_vold" remote="github" revision="aosp-5.1.1_r33" />
 
   <!-- Device and hardware parts -->
   <project path="device/samsung/omap4-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_omap4-common" remote="github" revision="aosp-5.1.1" />
@@ -485,6 +485,6 @@
   <project path="hardware/ti/omap4" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ti_omap4" remote="github" revision="aosp-5.1.1" />
   <project path="hardware/samsung" name="SamsungGalaxyTab2-AOSP/aosp_hardware_samsung" remote="github" revision="aosp-5.1.1" />
 
-  <project path="hardware/ril" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ril" remote="github" revision="aosp-5.1.1_r30" />
+  <project path="hardware/ril" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ril" remote="github" revision="aosp-5.1.1_r33" />
 
 </manifest>
