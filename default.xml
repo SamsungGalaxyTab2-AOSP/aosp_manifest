@@ -406,6 +406,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
+  <project path="system/core" name="platform/system/core" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
@@ -433,7 +434,6 @@
   <project path="frameworks/base" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_base" remote="github" revision="aosp-6.0.0_r1" />
   <project path="frameworks/native" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_native" remote="github" revision="aosp-6.0.0_r1" />
   <project path="hardware/ril" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ril" remote="github" revision="aosp-6.0.0_r1" />
-  <project path="system/core" name="SamsungGalaxyTab2-AOSP/aosp_system_core" remote="github" revision="aosp-6.0.0_r1" />
   <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-6.0.0_r1" />
   <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-6.0" />
 
