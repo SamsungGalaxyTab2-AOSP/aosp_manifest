@@ -2,16 +2,17 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
 
-  <remote  name="github"
-           fetch="git://github.com/" />
+  <remote  name="tab2-aosp"
+           fetch="https://github.com/SamsungGalaxyTab2-AOSP/" />
 
-  <default revision="refs/tags/android-6.0.0_r1"
+  <default revision="refs/tags/android-6.0.1_r43"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="SamsungGalaxyTab2-AOSP/aosp_build" remote="github" revision="aosp-6.0.0_r1" >
+  <project path="build" name="aosp_build" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -252,6 +253,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/av" name="aosp_frameworks_av" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk" />
+  <project path="frameworks/base" name="aosp_frameworks_base" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -260,6 +263,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="aosp_frameworks_native" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -276,7 +280,7 @@
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="aosp_frameworks_opt_telephony" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs,pdk-fs" />
@@ -292,6 +296,8 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <project path="hardware/ril" name="aosp_hardware_ril" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk" />
+  <project path="hardware/ti/omap4" name="aosp_hardware_ti_omap4" remote="tab2-aosp" revision="aosp-6.0" groups="omap4" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
@@ -333,7 +339,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="aosp_packages_apps_Settings" remote="tab2-aosp" revision="aosp-6.0.1_r43" groups="pdk-fs" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -387,6 +393,7 @@
   <project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" groups="pdk,darwin,mips" />
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
@@ -407,6 +414,7 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
+  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
@@ -427,23 +435,8 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
-  <!-- additions -->
-  <project path="aosp_manifest" name="SamsungGalaxyTab2-AOSP/aosp_manifest" remote="github" revision="aosp-6.0" />
-  <project path="frameworks/av" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_av" remote="github" revision="aosp-6.0.0_r1" />
-  <project path="frameworks/base" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_base" remote="github" revision="aosp-6.0.0_r1" />
-  <project path="frameworks/native" name="SamsungGalaxyTab2-AOSP/aosp_frameworks_native" remote="github" revision="aosp-6.0.0_r1" />
-  <project path="hardware/ril" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ril" remote="github" revision="aosp-6.0.0_r1" />
-  <project path="system/extras" name="SamsungGalaxyTab2-AOSP/aosp_system_extras" remote="github" revision="aosp-6.0.0_r1" />
-  <project path="vendor/aosp" name="SamsungGalaxyTab2-AOSP/aosp_vendor_aosp" remote="github" revision="aosp-6.0" />
-
-  <!-- Non-AOSP Device & Hardware parts -->
-  <project path="device/samsung/espresso-common" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_espresso-common" remote="github" revision="aosp-6.0" />
-  <project path="device/samsung/p3100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3100" remote="github" revision="aosp-6.0" />
-  <project path="device/samsung/p3110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p3110" remote="github" revision="aosp-6.0" />
-  <project path="device/samsung/p5100" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5100" remote="github" revision="aosp-6.0" />
-  <project path="device/samsung/p5110" name="SamsungGalaxyTab2-AOSP/aosp_device_samsung_p5110" remote="github" revision="aosp-6.0" />
-  <project path="hardware/ti/omap4" name="SamsungGalaxyTab2-AOSP/aosp_hardware_ti_omap4" remote="github" revision="aosp-6.0" />
-  <project path="hardware/samsung" name="SamsungGalaxyTab2-AOSP/aosp_hardware_samsung" remote="github" revision="aosp-6.0" />
+  <project path="vendor/samsung" name="aosp_vendor_samsung" remote="tab2-aosp" revision="aosp-6.0" />
+  <project path="vendor/ti" name="aosp_vendor_ti" remote="tab2-aosp" revision="aosp-6.0" />
+  <project path="vendor/widevine" name="aosp_vendor_widevine" remote="tab2-aosp" revision="aosp-6.0" />
 
 </manifest>
